@@ -8,8 +8,7 @@ BRUN is a command line tool to help Bruno (or you) execute routine development c
 
 - Anxious or accelerated persons
 - Diagnosed with Alzheimer's
-- Disorganized people who lose their notes
-- Marihuana smokers
+- Disorganized or forgotten people who lose their notes
 
 ## Install BRUN
 
