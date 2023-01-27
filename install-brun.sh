@@ -1,28 +1,24 @@
 #!/bin/bash
-brunfolder=$HOME/Applications/brun;
-zsh="~/.zshrc";
-# if [ -f $brunfolder ]; then
-#   sudo mkdir $brunfolder;
-#   else
-#   echo "A BRUN installation already exists in $brunfolder";
-#
-echo "Installing BRUN on your machine!!"
-sudo cp -r * $brunfolder
-echo "BRUN files copied in $HOME";
+brunfolder=$HOME/Applications//brun/
+zsh="$HOME/.zshrc"
+bashprofile="$HOME/.bash_profile"
 
-#sudo chmod -x $brunfolder*
-#perl -i -pe's/\r$//;' $brunfolder*
-# if grep -Fxq "brun.sh" $zsh; then
-#   echo "Alias do brun já existe";
-# else
-#   if [ -d "~/.zshrc" ]; then
-#     #    echo 'alias brun="bash $HOME/Applications/brun.sh' >> $zsh
-#     source $zsh;
-#   fi
-# fi
-
-#echo 'alias brun="bash $HOME/Applications/brun.sh' >~/.bash_profile
-#source ~/.bash_profile
-#echo "BRUN has been successfully installed!"
-
-exit;
+if [ -d "$brunfolder" ]; then
+  echo "A BRUN installation already exists in $brunfolder, maybe you want do a 'brun update'?"
+else
+  sudo mkdir $brunfolder
+  echo "--------------------------------------"
+  echo "Installing BRUN on your machine!!"
+  echo "--------------------------------------"
+  sudo cp -R * $brunfolder
+  sudo chmod -x $HOME/Applications//brun/*
+  echo 'alias brun="bash $HOME/Applications/brun/brun.sh"' >>$zsh
+  echo 'alias brun="bash $HOME/Applications/brun/brun.sh"' >>$bashprofile
+  echo "Reloading bash_profile $bashprofile"
+  echo "If you are using zsh maybe you need to reload it with command: source ~/.zshrc"
+  source $bashprofile
+  echo "--------------------------------------"
+  echo "BRUN has been successfully installed!"
+  echo "--------------------------------------"
+fi
+exit
