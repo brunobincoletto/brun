@@ -1,6 +1,6 @@
 #!/bin/bash
 bruncmd=$1
-brunfolder=$HOME/Applications//brun
+brunfolder=$HOME/Applications/brun
 if [[ $1 == "rename-branch" ]]; then
   bash $brunfolder/commands/branch-rename.sh
   exit;
