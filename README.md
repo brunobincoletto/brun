@@ -1,4 +1,4 @@
-![version](https://img.shields.io/badge/version-0.0.2-green.svg)
+![version](https://img.shields.io/badge/version-1.1.0-green.svg)
 
 # What is BRUN?
 
@@ -33,6 +33,22 @@ Rename your local and remote branch.
 Do a full and clean install in your node project folder.
 
 **Same as** `rm -rf ./node_modules && rm package-lock.json && npm cache clean --force && nvm use && npm i`
+
+##### Clean snapshot
+
+`npm run test:unit -- -u`
+
+Removes all jest snapshot files.
+
+##### Kill node
+
+Kill all node instances and shutdown your node server.
+
+##### Fixes
+
+Run Prettier and Lint fixes
+
+##### Clean install
 
 ## What's to come?
 
