@@ -12,6 +12,7 @@ if [ -f "package-lock.json" ]; then
   npm i;
   npm run build
   echo "Clean install executed successfully!"
+  echo "bye ;)"
 else
   echo "We couldn't find the package-lock.json file, try running the command manually. \n\n rm -rf ./node_modules && rm package-lock.json && npm cache clean --force && nvm use && npm i"
 fi
