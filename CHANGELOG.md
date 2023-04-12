@@ -8,6 +8,7 @@
 - Add kill node command
 - Add fixes prettier and lint command
 - Add remove jest snapshot command
+- Add fast push command
 ## [1.0.0] - 18 Jan 2023
 - First commit
 - rename-branch command

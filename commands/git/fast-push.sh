@@ -2,7 +2,7 @@
 message=$1
 if [ -z $1 ]; then
   clear
-  echo -e "Run the script again and enter a new valid name that you want to rename..."
+  echo -e "Run the script again and enter a new valid message that you want to commit..."
   exit
 else
   echo "Listing all files that will be committed."
