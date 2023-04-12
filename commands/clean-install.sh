@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -f "package-lock.json" ]; then
-  rm package-lock.json;
+  rm -rf package-lock.json;
   if [ -d "./node_modules" ]; then
     rm -rf ./node_modules;
   fi
