@@ -8,7 +8,6 @@ if [ -f "package-lock.json" ]; then
     rm -rf manifest.images.json
   fi
   npm cache clean --force;
-  nvm use;
   npm i;
   npm run build
   echo "Clean install executed successfully!"
