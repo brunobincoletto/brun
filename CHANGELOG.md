@@ -3,8 +3,12 @@
 - Update script
 - Improve rename-branch command
 - Clean install command
-
-## [0.0.1] - 18 Jan 2023
+## [1.1.0] - 12 April 2023
+- Fix clean install command
+- Add kill node command
+- Add fixes prettier and lint command
+- Add remove jest snapshot command
+## [1.0.0] - 18 Jan 2023
 - First commit
 - rename-branch command
 - Start Readme
