@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ -f "package-lock.json" ]; then
 rm -rf package-lock.json;
 fi
@@ -11,6 +12,8 @@ fi
 npm cache clean --force;
 npm i;
 npm run build
-echo "Clean install executed successfully!"
-echo "bye ;)"
-
+CYAN='\033[1;36m'
+YELLOW='\033[1;33m'
+echo "----------------------------------------------------------------"
+echo -e "${CYAN}Clean install executed successfully!"
+echo -e "${YELLOW}bye ;)"
