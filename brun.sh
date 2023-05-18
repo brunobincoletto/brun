@@ -31,5 +31,10 @@ if [[ $1 == "clean-install" ]]; then
   exit;
 fi
 
+if [[ $1 == "help" ]]; then
+  bash $brunfolder/commands/help.sh;
+  exit;
+fi
+
 echo "BRUN what? :(";
 exit;

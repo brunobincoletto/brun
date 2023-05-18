@@ -1,0 +1,12 @@
+echo "Git fast commands";
+echo "----------------------------------------------------------------";
+echo "brun rename-branch: rename your current branch";
+echo "brun push: do git (add . ; git commit -m your-message ; git push) in one command.";
+echo "----------------------------------------------------------------";
+echo "brun kill-node: kill all node processes";
+echo "brun clean-snapshot: clean all snapshots of jest tests";
+echo "brun clean-install: make a complete clean install in your project";
+echo "brun help: view this commands ;)";
+echo "----------------------------------------------------------------";
+echo "Doubts? https://github.com/brunobincoletto/brun or talk with Bruno :P";
+exit;
